@@ -22,9 +22,9 @@ public:
 
     BigInt(const char *);
 
-    BigInt(BigInt &);
+    BigInt(BigInt &) = default;
 
-    BigInt(BigInt &&);
+    BigInt(BigInt &&) = default;
 
     //Helper Functions:
     friend void divide_by_2(BigInt &a);
