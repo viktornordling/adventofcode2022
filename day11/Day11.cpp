@@ -125,7 +125,6 @@ int part1() {
         monkeys.push_back(monkey);
         monkeyNo++;
     }
-    cout << "bla" << endl;
     long monkeyInspections[6];
     for (int i = 0; i < 6; i++) {
         monkeyInspections[i] = 0;

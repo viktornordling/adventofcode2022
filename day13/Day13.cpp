@@ -18,19 +18,9 @@ class Expr {
 public:
     vector<Expr *> exprs;
     bool isList = true;
-    int vaxl = -1;
-    virtual void print() {
-        cout << "EXPR" << endl;
-    }
+    int val = -1;
 };
 
-class ScalarExpr: public Expr {
-public:
-    int bananas{};
-    void print() override {
-        cout << "BANANAS" << endl;
-    }
-};
 
 Expr parse(string line) {
     stack<Expr *> exprStack;
@@ -162,12 +152,6 @@ int part1() {
 }
 
 int main() {
-    vector<Expr *> list;
-    ScalarExpr scalarExpr;
-    scalarExpr.val = 5;
-    scalarExpr.bananas = 25;
-    list.push_back(&scalarExpr);
-    list[0]->print();
-//    part1();
+    part1();
 //    part2();
 }
